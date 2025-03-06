@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <title>Formulario de Login e Cadastro</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Login -->
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="#" name="login" id="login" class="sign-in-form" autocomplete="off">
+          <h2 class="title">Login</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" name="usuarioLogin" id="usuarioLogin" placeholder="Usuário" autocomplete="off" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="Senha" />
+            <i class="fas fa-eye-slash toggle-password"></i>
+          </div>
+          <div class="link-container">
+            <a href="#" id="recuperarSenha" class="form-link">Esqueceu sua senha?</a>
+          </div>
+          <input type="submit" value="Entrar" class="btn solid" />
+          
+          <p class="social-text">Ou entre com suas redes sociais</p>
+          <div class="social-media">
+            <button type="button" class="social-icon google" id="googleLogin">
+              <i class="fab fa-google"></i>
+            </button>
+            <button type="button" class="social-icon facebook" id="facebookLogin">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- Cadastro -->
+        <form action="#" name="cadastro" id="cadastro" class="sign-up-form" autocomplete="off">
+          <h2 class="title">Cadastrar</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" name="usuarioCadastro" id="usuarioCadastro" placeholder="Usuário" autocomplete="off" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="emailCadastro" id="emailCadastro" placeholder="Email" autocomplete="off" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="senhaCadastro" id="senhaCadastro" placeholder="Senha" />
+            <i class="fas fa-eye-slash toggle-password"></i>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Confirme a senha" />
+            <i class="fas fa-eye-slash toggle-password"></i>
+          </div> 
+          <div class="link-container">
+            <input type="checkbox" name="aceitarTermos" id="aceitarTermos" />
+            <label for="aceitarTermos"><a href="#" id="termsLink" class="form-link">Aceitar termos e condições</a></label>
+          </div>
+          <input type="submit" class="btn" value="Cadastrar" />
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Btn Cadastro e Login -->
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>Novo por aqui ?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            ex ratione. Aliquid!
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Cadastrar
+          </button>
+        </div>
+        <img src="./assets/img/log.svg" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Já possui cadastro ?</h3>
+          <p>
+            <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            ex ratione. Aliquid! -->
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            Entrar
+          </button>
+        </div>
+        <img src="./assets/img/register.svg" class="image" alt="" />
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- Google Sign-In -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+  <!-- Facebook SDK -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js"></script>
+  
+  <script type="module" src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
