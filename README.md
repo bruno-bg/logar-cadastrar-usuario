@@ -148,4 +148,4 @@ A senha deve conter:
 - Firefox (última versão)
 - Safari (última versão)
 - Edge (última versão)
-- Dispositivos móveis e tablets
+- Dispositivos móveis e tablets 

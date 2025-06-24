@@ -116,4 +116,4 @@ export class Auth {
       UI.showErrorMessage('Erro ao processar recuperação de senha');
     }
   }
-} 
+}  

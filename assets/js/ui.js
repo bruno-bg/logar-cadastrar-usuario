@@ -94,4 +94,4 @@ export class UI {
       confirmButtonColor: '#4481eb'
     });
   }
-} 
+}  

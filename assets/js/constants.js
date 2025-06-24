@@ -47,4 +47,4 @@ export const SELECTORS = {
   },
   passwordRecovery: '#recuperarSenha',
   togglePassword: '.toggle-password'
-}; 
+};  

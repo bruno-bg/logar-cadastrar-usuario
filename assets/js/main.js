@@ -227,5 +227,5 @@ class App {
   }
 }
 
-// Inicializa a aplicação
+// Inicializa a aplicação 
 App.init();
